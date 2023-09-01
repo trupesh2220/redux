@@ -22,6 +22,9 @@ function Products() {
   if (status === STATUS.LOADING) {
     return <h2>Loading...</h2>;
   }
+  if (status === STATUS.ERROR) {
+    return <h2>something is wrong</h2>;
+  }
   return (
     <div className="productsWrapper">
       {products.map((product) => (
