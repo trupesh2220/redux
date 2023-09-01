@@ -6,12 +6,12 @@ function Products() {
   const [Products, setProducts] = useState([]);
   const dispatch = useDispatch();
   useEffect(() => {
-    const fetchProducts = async () => {
-      const res = await fetch("https://fakestoreapi.com/products");
-      const data = await res.json();
-      setProducts(data);
-    };
-    fetchProducts();
+    // const fetchProducts = async () => {
+    //   const res = await fetch("https://fakestoreapi.com/products");
+    //   const data = await res.json();
+    //   setProducts(data);
+    // };
+    // fetchProducts();
   }, []);
   const handelAdd = (product) => {
     dispatch(add(product));
