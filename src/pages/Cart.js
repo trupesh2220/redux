@@ -8,6 +8,10 @@ function Cart() {
   const handelRemove =(id)=>{
     dispatch(remove(id))
   }
+  if(products.length === 0)
+  {
+    return <h3>Add Product for Purchase</h3>
+  }
   return (
     <div>
       <h3>cart</h3>
